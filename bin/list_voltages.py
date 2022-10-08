@@ -21,7 +21,7 @@ for entry in fha.device_information():
     descr = entry['NewDeviceName']
     power = -1.0
     consumption = -1.0
-    if entry['NewMultimeterIsValid']:
+    if entry['NewMultimeterIsValid'] == "VALID":
         power = int(entry['NewMultimeterPower']) / 100.0
         consumption = int(entry['NewMultimeterEnergy']) / 1000.0
 
