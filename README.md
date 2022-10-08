@@ -22,6 +22,7 @@ Supply configuration file parameter **--config**. The contents of the file shoul
 Put or link the approptiate plugin to your local munin plugins installation (normally located under */etc/munin/plugins/*)
 
 Supply applicable munin confguration (/etc/munin/plugin-conf.d/<plugin_name>):
+
     [<plugin_name>]
     env.hostname = <foobar>
     env.auth_username = <user>
