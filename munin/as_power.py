@@ -35,7 +35,7 @@ for entry in fha.device_information():
     ain_munin = "s" + ain.replace(" ", "")  # munin needs the data source start with a character
 
     if config:
-        sys.stdout.write(f"{ain_munin}.label: {descr}\n")
+        sys.stdout.write(f"{ain_munin}.label {descr}\n")
         continue
 
-    sys.stdout.write(f"{ain_munin}.value: {power}\n")
+    sys.stdout.write(f"{ain_munin}.value {power}\n")
