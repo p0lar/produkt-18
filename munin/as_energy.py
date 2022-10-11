@@ -36,7 +36,6 @@ for entry in fha.device_information():
 
     if config:
         sys.stdout.write(f"{ain_munin}.label {descr}\n")
-        sys.stdout.write(f"{ain_munin}.type DERIVE\n")
         sys.stdout.write(f"{ain_munin}.min 0\n")
         continue
 
